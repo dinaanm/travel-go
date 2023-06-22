@@ -2,6 +2,15 @@
 
 TRAVELGO adalah website penyedia jasa travel trip yang disediakan oleh travel agent.
 
+## Fitur
+- **Login**
+- **Checkout Paket Travel (User)**
+- **Check History Checkout (User)**
+- **Check Data Paket Travel (Admin)**
+- **Check Data Transaksi (Admin)**
+- **Check Data Gallery Paket Travel (Admin)**
+- **Menambahkan Paket Travel (Vendor)**
+- **Menambahkan Gallery Paket Travel (Vendor)**
 ## Preview
 
 - **Main Website**
