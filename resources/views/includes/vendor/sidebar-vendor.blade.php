@@ -36,6 +36,15 @@
 
     <hr class="sidebar-divider">
 
+    <!-- Nav Item - Transaksi -->
+    <li class="nav-item">
+        <a class="nav-link" href="">
+            <i class="fas fa-fw fa-dollar-sign"></i>
+            <span>Transaksi</span></a>
+    </li>
+
+    <hr class="sidebar-divider">
+
     <!-- Sidebar Toggler (Sidebar) -->
     <div class="text-center d-none d-md-inline">
         <button class="rounded-circle border-0" id="sidebarToggle"></button>
