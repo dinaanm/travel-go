@@ -66,6 +66,7 @@ Route::prefix('vendor')
             ->name('dashboard-vendor');
         Route::resource('travel-vendor', 'App\Http\Controllers\Vendor\TravelVendorController');
         Route::resource('gallery-vendor', 'App\Http\Controllers\Vendor\GalleryVendorController');
+        Route::resource('transaction-vendor', 'App\Http\Controllers\Vendor\TransactionVendorController');
     });
 
 Auth::routes();
