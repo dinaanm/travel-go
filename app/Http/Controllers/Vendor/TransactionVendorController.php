@@ -17,4 +17,16 @@ class TransactionVendorController extends Controller
             'items' => $items, 'account' => $account
         ]);
     }
+
+    public function show($id)
+    {
+        $item = Transaction::with([
+            'details', 'travel_package', 'user'
+        ])->findOrFail($id);
+
+
+        return view('pages.vendor.transaction.detail', [
+            'item' => $item
+        ]);
+    }
 }

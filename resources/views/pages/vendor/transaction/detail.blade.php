@@ -1,4 +1,4 @@
-@extends('layouts.admin')
+@extends('layouts.vendor')
 
 @section('content')
     <!-- Begin Page Content -->
@@ -6,7 +6,7 @@
 
         <!-- Page Heading -->
         <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Detail Transaksi {{ $item->user->name }}</h1>
+            <h1 class="h3 mb-0 text-gray-800">Detail Transaksi {{ $item->travel_package->title }} ({{ $item->user->name }})</h1>
         </div>
 
         @if ($errors->any())
@@ -57,6 +57,12 @@
                                     </tr>
                                 @endforeach
                             </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Bukti Pembayaran</th>
+                        <td>
+                            <img src="{{ Storage::url($item->payment_proof) }}" alt="" style="width: 300px" class="img-thumbnail">
                         </td>
                     </tr>
                 </table>
